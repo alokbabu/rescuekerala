@@ -18,7 +18,7 @@
     </tr>
     {% for req in data %}
         <tr>
-          <td>{{ req.location }} <span class="label">{{ req.dateadded }}</span></td>
+          <td>{{ req.location }} requested on <span class="label">{{ req.dateadded }}</span></td>
           <td>
             {% if req.latlng %}
               <a class="btn btn-sm btn-success" href="https://maps.google.com/?q={{ req.latlng }}" target="_blank">Open in maps</a>
